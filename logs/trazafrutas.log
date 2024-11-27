@@ -4804,3 +4804,43 @@ Caused by: org.postgresql.util.PSQLException: ERROR: la columna «producto» es 
 2024-11-27 11:03:51 [http-nio-8080-exec-4] DEBUG c.t.controller.DashboardController [76d0b2af-570b-4119-acb5-19803f0c41cd] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 63ms
 2024-11-27 11:03:51 [http-nio-8080-exec-6] DEBUG c.t.service.DashboardService [9b5deb5c-9447-498a-afbf-f02ffd81474a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 91ms
 2024-11-27 11:03:51 [http-nio-8080-exec-6] DEBUG c.t.controller.DashboardController [9b5deb5c-9447-498a-afbf-f02ffd81474a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 92ms
+2024-11-27 11:16:44 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 11:16:44 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 11:16:44 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 99ms
+2024-11-27 11:16:44 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 99ms
+2024-11-27 11:16:44 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 11:16:44 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 355ms
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 355ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 0ms
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG c.t.controller.DashboardController [2f5fe7fe-a27a-40e2-a396-1a38b3bd3b21] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.controller.DashboardController [5fb309ad-36b9-4314-a11c-149cd92d369a] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG c.t.service.DashboardService [2f5fe7fe-a27a-40e2-a396-1a38b3bd3b21] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.DashboardService [5fb309ad-36b9-4314-a11c-149cd92d369a] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG c.t.service.DashboardService [2f5fe7fe-a27a-40e2-a396-1a38b3bd3b21] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 63ms
+2024-11-27 11:16:45 [http-nio-8080-exec-2] DEBUG c.t.controller.DashboardController [2f5fe7fe-a27a-40e2-a396-1a38b3bd3b21] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 79ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 0ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.DashboardService [5fb309ad-36b9-4314-a11c-149cd92d369a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 148ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.controller.DashboardController [5fb309ad-36b9-4314-a11c-149cd92d369a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 148ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 0ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 69ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 12ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 71ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 9ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.controller.DashboardController [66cd246f-5602-453b-ad65-ee4c0d639f87] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.DashboardService [66cd246f-5602-453b-ad65-ee4c0d639f87] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.service.DashboardService [66cd246f-5602-453b-ad65-ee4c0d639f87] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 74ms
+2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.controller.DashboardController [66cd246f-5602-453b-ad65-ee4c0d639f87] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 85ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 141ms
+2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 141ms
