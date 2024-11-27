@@ -4844,3 +4844,4 @@ Caused by: org.postgresql.util.PSQLException: ERROR: la columna «producto» es 
 2024-11-27 11:16:45 [http-nio-8080-exec-1] DEBUG c.t.controller.DashboardController [66cd246f-5602-453b-ad65-ee4c0d639f87] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 85ms
 2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 141ms
 2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 141ms
+2024-11-27 11:51:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] [] [] - Closing JPA EntityManagerFactory for persistence unit 'default'
