@@ -126,8 +126,8 @@ public class ClientService {
 
         if (client.getFloid() == null || client.getFloid().trim().isEmpty()) {
             errors.append("El FLO ID es requerido. ");
-        } else if (!client.getFloid().matches("\\d{4}")) {
-            errors.append("El FLO ID debe ser un número de 4 dígitos. ");
+        } else if (!client.getFloid().matches("\\d{5}")) {
+            errors.append("El FLO ID debe ser un número de 5 dígitos. ");
         }
 
         if (client.getDireccion() == null || client.getDireccion().trim().isEmpty()) {
