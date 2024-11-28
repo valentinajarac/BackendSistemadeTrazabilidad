@@ -23,13 +23,17 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(value = "SELECT COUNT(DISTINCT u.id) FROM users u " +
             "JOIN user_certifications uc ON u.id = uc.user_id " +
-            "WHERE CAST(u.role AS text) = ?1 AND uc.certification = ?2 AND u.user_status = 'ACTIVO'",
+            "WHERE CAST(u.role AS text) = ?1 " +
+            "AND CAST(uc.certification AS certification_type) = CAST(?2 AS certification_type) " +
+            "AND u.user_status = 'ACTIVO'",
             nativeQuery = true)
     Long countByRoleAndCertification(String role, String certification);
 
     @Query(value = "SELECT COUNT(DISTINCT u.id) FROM users u " +
             "JOIN user_certifications uc ON u.id = uc.user_id " +
-            "WHERE CAST(u.role AS text) = ?1 AND uc.certification = ANY(?2) AND u.user_status = 'ACTIVO'",
+            "WHERE CAST(u.role AS text) = ?1 " +
+            "AND CAST(uc.certification AS certification_type) = ANY(CAST(?2 AS certification_type[])) " +
+            "AND u.user_status = 'ACTIVO'",
             nativeQuery = true)
     Long countDistinctByRoleAndCertificationsIn(String role, String[] certifications);
 

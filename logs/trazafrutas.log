@@ -4845,3 +4845,1307 @@ Caused by: org.postgresql.util.PSQLException: ERROR: la columna «producto» es 
 2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 141ms
 2024-11-27 11:16:45 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [386b115b-4c0d-49e1-abcf-1faa02b45497] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 141ms
 2024-11-27 11:51:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] [] [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:03:22 [background-preinit] INFO  o.h.validator.internal.util.Version [] [] [] - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 14:03:22 [main] INFO  c.trazafrutas.TrazafrutasApplication [] [] [] - Starting TrazafrutasApplication using Java 17.0.13 with PID 19556 (C:\Users\sembr\Downloads\SistemaWebTrazabilidad\Backend\target\classes started by sembr in C:\Users\sembr\Downloads\SistemaWebTrazabilidad\Backend)
+2024-11-27 14:03:22 [main] DEBUG c.trazafrutas.TrazafrutasApplication [] [] [] - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-11-27 14:03:22 [main] INFO  c.trazafrutas.TrazafrutasApplication [] [] [] - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 14:03:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] [] [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 14:03:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [] [] [] - Finished Spring Data repository scanning in 114 ms. Found 5 JPA repository interfaces.
+2024-11-27 14:03:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] [] [] - Tomcat initialized with port 8080 (http)
+2024-11-27 14:03:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol [] [] [] - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:03:24 [main] INFO  o.a.catalina.core.StandardService [] [] [] - Starting service [Tomcat]
+2024-11-27 14:03:24 [main] INFO  o.a.catalina.core.StandardEngine [] [] [] - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-11-27 14:03:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] [] [] - Initializing Spring embedded WebApplicationContext
+2024-11-27 14:03:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [] [] [] - Root WebApplicationContext: initialization completed in 2446 ms
+2024-11-27 14:03:25 [main] INFO  o.f.c.i.license.VersionPrinter [] [] [] - Flyway Community Edition 9.22.3 by Redgate
+2024-11-27 14:03:25 [main] INFO  o.f.c.i.license.VersionPrinter [] [] [] - See release notes here: https://rd.gt/416ObMi
+2024-11-27 14:03:25 [main] INFO  o.f.c.i.license.VersionPrinter [] [] [] - 
+2024-11-27 14:03:25 [main] INFO  org.flywaydb.core.FlywayExecutor [] [] [] - Database: jdbc:postgresql://localhost:5432/trazafrutas (PostgreSQL 17.0)
+2024-11-27 14:03:25 [main] WARN  o.f.c.i.database.base.Database [] [] [] - Flyway upgrade recommended: PostgreSQL 17.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2024-11-27 14:03:25 [main] INFO  o.f.core.internal.command.DbValidate [] [] [] - Successfully validated 2 migrations (execution time 00:00.039s)
+2024-11-27 14:03:25 [main] INFO  o.f.core.internal.command.DbMigrate [] [] [] - Current version of schema "public": 3
+2024-11-27 14:03:25 [main] WARN  o.f.core.internal.command.DbMigrate [] [] [] - Schema "public" has a version (3) that is newer than the latest available migration (1) !
+2024-11-27 14:03:25 [main] INFO  o.f.core.internal.command.DbMigrate [] [] [] - Schema "public" is up to date. No migration necessary.
+2024-11-27 14:03:25 [main] INFO  o.h.jpa.internal.util.LogHelper [] [] [] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 14:03:25 [main] INFO  org.hibernate.Version [] [] [] - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-11-27 14:03:25 [main] INFO  o.h.c.i.RegionFactoryInitiator [] [] [] - HHH000026: Second-level cache disabled
+2024-11-27 14:03:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo [] [] [] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 14:03:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [] [] [] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 14:03:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] [] [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:03:27 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory [] [] [] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-27 14:03:27 [main] DEBUG com.trazafrutas.filter.MDCFilter [] [] [] - Filter 'MDCFilter' configured for use
+2024-11-27 14:03:27 [main] DEBUG c.t.security.JwtAuthenticationFilter [] [] [] - Filter 'jwtAuthenticationFilter' configured for use
+2024-11-27 14:03:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [] [] [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 14:03:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain [] [] [] - Will secure Or [Mvc [pattern='/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@37f37699, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73372652, org.springframework.security.web.context.SecurityContextHolderFilter@82b778b, org.springframework.security.web.header.HeaderWriterFilter@16594479, org.springframework.web.filter.CorsFilter@34d6e9a4, org.springframework.security.web.authentication.logout.LogoutFilter@1f6881af, com.trazafrutas.security.JwtAuthenticationFilter@4b19ee18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@427475a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2706cee5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@756695e3, org.springframework.security.web.session.SessionManagementFilter@4ddeada6, org.springframework.security.web.access.ExceptionTranslationFilter@3117fd8, org.springframework.security.web.access.intercept.AuthorizationFilter@4ecd395f]
+2024-11-27 14:03:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol [] [] [] - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:03:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [] [] [] - Tomcat started on port 8080 (http) with context path ''
+2024-11-27 14:03:30 [main] INFO  c.trazafrutas.TrazafrutasApplication [] [] [] - Started TrazafrutasApplication in 13.703 seconds (process running for 14.337)
+2024-11-27 14:03:38 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [] [] [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 14:03:38 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [] [] [] - Initializing Servlet 'dispatcherServlet'
+2024-11-27 14:03:38 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet [] [] [] - Completed initialization in 3 ms
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 207ms
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 208ms
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 642ms
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 642ms
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:03:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 12ms
+2024-11-27 14:03:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 12ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [e431bbdc-6b52-4749-ae1c-fea92d583599] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:03:40 [http-nio-8080-exec-6] DEBUG c.t.controller.DashboardController [dacdcf09-71ea-4bd1-9c58-4d763cb68e7e] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [e431bbdc-6b52-4749-ae1c-fea92d583599] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:03:40 [http-nio-8080-exec-6] DEBUG c.t.service.DashboardService [dacdcf09-71ea-4bd1-9c58-4d763cb68e7e] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:03:40 [http-nio-8080-exec-6] DEBUG c.t.service.DashboardService [dacdcf09-71ea-4bd1-9c58-4d763cb68e7e] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 153ms
+2024-11-27 14:03:40 [http-nio-8080-exec-6] DEBUG c.t.controller.DashboardController [dacdcf09-71ea-4bd1-9c58-4d763cb68e7e] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 161ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 6ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [e431bbdc-6b52-4749-ae1c-fea92d583599] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 584ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [e431bbdc-6b52-4749-ae1c-fea92d583599] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 585ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 234ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 12ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.controller.DashboardController [61be4350-0f43-47f6-a210-e4550cf7d608] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.service.DashboardService [61be4350-0f43-47f6-a210-e4550cf7d608] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.service.DashboardService [61be4350-0f43-47f6-a210-e4550cf7d608] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 76ms
+2024-11-27 14:03:40 [http-nio-8080-exec-9] DEBUG c.t.controller.DashboardController [61be4350-0f43-47f6-a210-e4550cf7d608] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 79ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 185ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 7ms
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [1548400b-0176-4abd-90f3-69c439a6d917] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:03:40 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [1548400b-0176-4abd-90f3-69c439a6d917] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:03:41 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [1548400b-0176-4abd-90f3-69c439a6d917] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 129ms
+2024-11-27 14:03:41 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [1548400b-0176-4abd-90f3-69c439a6d917] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 130ms
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG c.t.controller.AuthController [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthController.login
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthService.authenticate
+2024-11-27 14:04:05 [http-nio-8080-exec-6] INFO  com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Iniciando proceso de autenticación para usuario: admin
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Usuario encontrado en la base de datos: admin
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Hash almacenado en BD: $2a$10$DaWzKFk1h3Vk8rKHGxvCp.LZpUk2qkKxY5Jy9H4ZEqD4kKvqFLtcO
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña proporcionada: admin123
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Comparación directa - ¿Contraseñas coinciden?: true
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Comparación encriptada - ¿Contraseñas coinciden?: false
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña verificada correctamente
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando JwtService.generateToken
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado JwtService.generateToken en 33ms
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - JWT generado exitosamente
+2024-11-27 14:04:05 [http-nio-8080-exec-6] INFO  com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - Autenticación completada exitosamente para usuario: admin
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthService.authenticate en 236ms
+2024-11-27 14:04:05 [http-nio-8080-exec-6] DEBUG c.t.controller.AuthController [b6187898-d5d7-40cc-a3e4-c8d5b93fefd0] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthController.login en 319ms
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 62ms
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 63ms
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 7ms
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.controller.DashboardController [77cd3cee-aef2-47b1-9a43-51a58d709c00] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.service.DashboardService [77cd3cee-aef2-47b1-9a43-51a58d709c00] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.controller.DashboardController [5b3ef832-e10c-4642-bf94-0f566f3907e9] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.service.DashboardService [5b3ef832-e10c-4642-bf94-0f566f3907e9] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.service.DashboardService [77cd3cee-aef2-47b1-9a43-51a58d709c00] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 64ms
+2024-11-27 14:04:05 [http-nio-8080-exec-10] DEBUG c.t.controller.DashboardController [77cd3cee-aef2-47b1-9a43-51a58d709c00] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 65ms
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.service.DashboardService [5b3ef832-e10c-4642-bf94-0f566f3907e9] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 121ms
+2024-11-27 14:04:05 [http-nio-8080-exec-8] DEBUG c.t.controller.DashboardController [5b3ef832-e10c-4642-bf94-0f566f3907e9] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 122ms
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 69ms
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.controller.DashboardController [411a924a-8590-46f2-a713-f392440a5470] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.service.DashboardService [411a924a-8590-46f2-a713-f392440a5470] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 76ms
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 10ms
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [e8ed8d1c-35db-41d8-8a59-7ad33363d826] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:04:05 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [e8ed8d1c-35db-41d8-8a59-7ad33363d826] [admin] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.service.DashboardService [411a924a-8590-46f2-a713-f392440a5470] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 83ms
+2024-11-27 14:04:05 [http-nio-8080-exec-9] DEBUG c.t.controller.DashboardController [411a924a-8590-46f2-a713-f392440a5470] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 84ms
+2024-11-27 14:04:06 [http-nio-8080-exec-5] DEBUG c.t.service.DashboardService [e8ed8d1c-35db-41d8-8a59-7ad33363d826] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 117ms
+2024-11-27 14:04:06 [http-nio-8080-exec-5] DEBUG c.t.controller.DashboardController [e8ed8d1c-35db-41d8-8a59-7ad33363d826] [admin] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 118ms
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 193ms
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG c.t.controller.UserController [5abed6f8-1dca-4c97-a60e-2b34ffbb2e14] [admin] [0:0:0:0:0:0:0:1] - → Iniciando UserController.getAllUsers
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.UserService [5abed6f8-1dca-4c97-a60e-2b34ffbb2e14] [admin] [0:0:0:0:0:0:0:1] - → Iniciando UserService.getAllUsers
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.UserService [5abed6f8-1dca-4c97-a60e-2b34ffbb2e14] [admin] [0:0:0:0:0:0:0:1] - ← Completado UserService.getAllUsers en 182ms
+2024-11-27 14:04:38 [http-nio-8080-exec-7] DEBUG c.t.controller.UserController [5abed6f8-1dca-4c97-a60e-2b34ffbb2e14] [admin] [0:0:0:0:0:0:0:1] - ← Completado UserController.getAllUsers en 183ms
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 67ms
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG c.t.controller.UserController [fec1ccc4-9804-4521-b0db-bccd8eb6a0d4] [admin] [0:0:0:0:0:0:0:1] - → Iniciando UserController.getAllUsers
+2024-11-27 14:04:38 [http-nio-8080-exec-10] DEBUG com.trazafrutas.service.UserService [fec1ccc4-9804-4521-b0db-bccd8eb6a0d4] [admin] [0:0:0:0:0:0:0:1] - → Iniciando UserService.getAllUsers
+2024-11-27 14:04:39 [http-nio-8080-exec-10] DEBUG com.trazafrutas.service.UserService [fec1ccc4-9804-4521-b0db-bccd8eb6a0d4] [admin] [0:0:0:0:0:0:0:1] - ← Completado UserService.getAllUsers en 59ms
+2024-11-27 14:04:39 [http-nio-8080-exec-10] DEBUG c.t.controller.UserController [fec1ccc4-9804-4521-b0db-bccd8eb6a0d4] [admin] [0:0:0:0:0:0:0:1] - ← Completado UserController.getAllUsers en 59ms
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 65ms
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.t.controller.ClientController [ade894fc-4ff4-470c-a649-af1b791b5d9b] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.trazafrutas.service.ClientService [ade894fc-4ff4-470c-a649-af1b791b5d9b] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.trazafrutas.service.ClientService [ade894fc-4ff4-470c-a649-af1b791b5d9b] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 55ms
+2024-11-27 14:04:50 [http-nio-8080-exec-4] DEBUG c.t.controller.ClientController [ade894fc-4ff4-470c-a649-af1b791b5d9b] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 55ms
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 50ms
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.t.controller.ClientController [aa99ba85-c9bf-4b43-b80b-9d720475812d] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.trazafrutas.service.ClientService [aa99ba85-c9bf-4b43-b80b-9d720475812d] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.trazafrutas.service.ClientService [aa99ba85-c9bf-4b43-b80b-9d720475812d] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 47ms
+2024-11-27 14:04:50 [http-nio-8080-exec-3] DEBUG c.t.controller.ClientController [aa99ba85-c9bf-4b43-b80b-9d720475812d] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 49ms
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 6ms
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 65ms
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.controller.RemissionController [717fdfd3-0878-41b6-bbb7-01af86ac4def] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getAllRemissions
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.service.RemissionService [717fdfd3-0878-41b6-bbb7-01af86ac4def] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getAllRemissions
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.service.RemissionService [717fdfd3-0878-41b6-bbb7-01af86ac4def] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getAllRemissions en 122ms
+2024-11-27 14:04:52 [http-nio-8080-exec-9] DEBUG c.t.controller.RemissionController [717fdfd3-0878-41b6-bbb7-01af86ac4def] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getAllRemissions en 127ms
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 57ms
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.controller.RemissionController [4eaf6565-bdc0-44a1-9fb2-cfd7a8c164ad] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getAllRemissions
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.service.RemissionService [4eaf6565-bdc0-44a1-9fb2-cfd7a8c164ad] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getAllRemissions
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.service.RemissionService [4eaf6565-bdc0-44a1-9fb2-cfd7a8c164ad] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getAllRemissions en 70ms
+2024-11-27 14:04:52 [http-nio-8080-exec-8] DEBUG c.t.controller.RemissionController [4eaf6565-bdc0-44a1-9fb2-cfd7a8c164ad] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getAllRemissions en 71ms
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 57ms
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.t.controller.ClientController [c54aa977-46df-491f-85ab-8bd26acc628b] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.trazafrutas.service.ClientService [c54aa977-46df-491f-85ab-8bd26acc628b] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.trazafrutas.service.ClientService [c54aa977-46df-491f-85ab-8bd26acc628b] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 49ms
+2024-11-27 14:04:53 [http-nio-8080-exec-2] DEBUG c.t.controller.ClientController [c54aa977-46df-491f-85ab-8bd26acc628b] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 49ms
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 49ms
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.t.controller.ClientController [f690de9b-ab62-469f-94a5-8e35780cc7c8] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.trazafrutas.service.ClientService [f690de9b-ab62-469f-94a5-8e35780cc7c8] [admin] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.trazafrutas.service.ClientService [f690de9b-ab62-469f-94a5-8e35780cc7c8] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 49ms
+2024-11-27 14:04:53 [http-nio-8080-exec-5] DEBUG c.t.controller.ClientController [f690de9b-ab62-469f-94a5-8e35780cc7c8] [admin] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 50ms
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 62ms
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.controller.RemissionController [2e60da1d-c94a-4022-b53c-6ad929bfae58] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getAllRemissions
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.service.RemissionService [2e60da1d-c94a-4022-b53c-6ad929bfae58] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getAllRemissions
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.service.RemissionService [2e60da1d-c94a-4022-b53c-6ad929bfae58] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getAllRemissions en 75ms
+2024-11-27 14:04:54 [http-nio-8080-exec-4] DEBUG c.t.controller.RemissionController [2e60da1d-c94a-4022-b53c-6ad929bfae58] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getAllRemissions en 75ms
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 56ms
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.controller.RemissionController [b973aef7-6b52-47f9-a103-022944286935] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getAllRemissions
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.service.RemissionService [b973aef7-6b52-47f9-a103-022944286935] [admin] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getAllRemissions
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.service.RemissionService [b973aef7-6b52-47f9-a103-022944286935] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getAllRemissions en 187ms
+2024-11-27 14:04:54 [http-nio-8080-exec-3] DEBUG c.t.controller.RemissionController [b973aef7-6b52-47f9-a103-022944286935] [admin] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getAllRemissions en 187ms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 6ms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 78ms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG c.t.controller.FarmController [339545e2-8178-4578-8bb1-ffa394de241e] [admin] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getAllFarmsForAdmin
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.FarmService [339545e2-8178-4578-8bb1-ffa394de241e] [admin] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getAllFarms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.FarmService [339545e2-8178-4578-8bb1-ffa394de241e] [admin] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getAllFarms en 47ms
+2024-11-27 14:04:56 [http-nio-8080-exec-9] DEBUG c.t.controller.FarmController [339545e2-8178-4578-8bb1-ffa394de241e] [admin] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getAllFarmsForAdmin en 61ms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 169ms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG c.t.controller.FarmController [90af39fd-0b98-4aa8-b7d4-b4a628c03156] [admin] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getAllFarmsForAdmin
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.FarmService [90af39fd-0b98-4aa8-b7d4-b4a628c03156] [admin] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getAllFarms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.FarmService [90af39fd-0b98-4aa8-b7d4-b4a628c03156] [admin] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getAllFarms en 46ms
+2024-11-27 14:04:56 [http-nio-8080-exec-8] DEBUG c.t.controller.FarmController [90af39fd-0b98-4aa8-b7d4-b4a628c03156] [admin] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getAllFarmsForAdmin en 57ms
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 60ms
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG c.t.controller.CropController [60f50533-106c-4de2-92a7-05610dacd112] [admin] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getAllCropsForAdmin
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.CropService [60f50533-106c-4de2-92a7-05610dacd112] [admin] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getAllCrops
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.CropService [60f50533-106c-4de2-92a7-05610dacd112] [admin] [0:0:0:0:0:0:0:1] - ← Completado CropService.getAllCrops en 172ms
+2024-11-27 14:04:57 [http-nio-8080-exec-4] DEBUG c.t.controller.CropController [60f50533-106c-4de2-92a7-05610dacd112] [admin] [0:0:0:0:0:0:0:1] - ← Completado CropController.getAllCropsForAdmin en 186ms
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 155ms
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG c.t.controller.CropController [c68c3270-9ada-4fa9-912d-a7686e850287] [admin] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getAllCropsForAdmin
+2024-11-27 14:04:57 [http-nio-8080-exec-3] DEBUG com.trazafrutas.service.CropService [c68c3270-9ada-4fa9-912d-a7686e850287] [admin] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getAllCrops
+2024-11-27 14:04:58 [http-nio-8080-exec-3] DEBUG com.trazafrutas.service.CropService [c68c3270-9ada-4fa9-912d-a7686e850287] [admin] [0:0:0:0:0:0:0:1] - ← Completado CropService.getAllCrops en 54ms
+2024-11-27 14:04:58 [http-nio-8080-exec-3] DEBUG c.t.controller.CropController [c68c3270-9ada-4fa9-912d-a7686e850287] [admin] [0:0:0:0:0:0:0:1] - ← Completado CropController.getAllCropsForAdmin en 65ms
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG c.t.controller.AuthController [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthController.login
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthService.authenticate
+2024-11-27 14:05:07 [http-nio-8080-exec-7] INFO  com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Iniciando proceso de autenticación para usuario: Marleny
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Usuario encontrado en la base de datos: Marleny
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Hash almacenado en BD: $2a$10$J6qZ3wJ6OHJFfDxjNb7Qcui3gYbe6ucNgZHvF111gZnEzJXqHvVJW
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña proporcionada: 123456
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Comparación directa - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:07 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Comparación encriptada - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:07 [http-nio-8080-exec-7] ERROR com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña incorrecta para usuario: Marleny
+2024-11-27 14:05:07 [http-nio-8080-exec-7] ERROR com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - Error de credenciales para usuario Marleny: Usuario o contraseña incorrectos
+2024-11-27 14:05:07 [http-nio-8080-exec-7] ERROR com.trazafrutas.service.AuthService [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - × Error en AuthService.authenticate: Usuario o contraseña incorrectos
+org.springframework.security.authentication.BadCredentialsException: Usuario o contraseña incorrectos
+	at com.trazafrutas.service.AuthService.authenticate(AuthService.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.service.AuthService$$SpringCGLIB$$0.authenticate(<generated>)
+	at com.trazafrutas.controller.AuthController.login(AuthController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.trazafrutas.filter.MDCFilter.doFilterInternal(MDCFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.trazafrutas.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-27 14:05:07 [http-nio-8080-exec-7] ERROR c.t.controller.AuthController [24d57386-f110-408e-820c-3f15d20a4d8d] [anonymous] [0:0:0:0:0:0:0:1] - × Error en AuthController.login: Usuario o contraseña incorrectos
+org.springframework.security.authentication.BadCredentialsException: Usuario o contraseña incorrectos
+	at com.trazafrutas.service.AuthService.authenticate(AuthService.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.service.AuthService$$SpringCGLIB$$0.authenticate(<generated>)
+	at com.trazafrutas.controller.AuthController.login(AuthController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.trazafrutas.filter.MDCFilter.doFilterInternal(MDCFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.trazafrutas.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG c.t.controller.AuthController [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthController.login
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthService.authenticate
+2024-11-27 14:05:14 [http-nio-8080-exec-9] INFO  com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Iniciando proceso de autenticación para usuario: Marleny
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Usuario encontrado en la base de datos: Marleny
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Hash almacenado en BD: $2a$10$J6qZ3wJ6OHJFfDxjNb7Qcui3gYbe6ucNgZHvF111gZnEzJXqHvVJW
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña proporcionada: 123456
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Comparación directa - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:14 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Comparación encriptada - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:14 [http-nio-8080-exec-9] ERROR com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña incorrecta para usuario: Marleny
+2024-11-27 14:05:14 [http-nio-8080-exec-9] ERROR com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - Error de credenciales para usuario Marleny: Usuario o contraseña incorrectos
+2024-11-27 14:05:14 [http-nio-8080-exec-9] ERROR com.trazafrutas.service.AuthService [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - × Error en AuthService.authenticate: Usuario o contraseña incorrectos
+org.springframework.security.authentication.BadCredentialsException: Usuario o contraseña incorrectos
+	at com.trazafrutas.service.AuthService.authenticate(AuthService.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.service.AuthService$$SpringCGLIB$$0.authenticate(<generated>)
+	at com.trazafrutas.controller.AuthController.login(AuthController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.trazafrutas.filter.MDCFilter.doFilterInternal(MDCFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.trazafrutas.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-27 14:05:14 [http-nio-8080-exec-9] ERROR c.t.controller.AuthController [6c97b58c-c0fc-453c-9bab-b09fa9dc7b4d] [anonymous] [0:0:0:0:0:0:0:1] - × Error en AuthController.login: Usuario o contraseña incorrectos
+org.springframework.security.authentication.BadCredentialsException: Usuario o contraseña incorrectos
+	at com.trazafrutas.service.AuthService.authenticate(AuthService.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.service.AuthService$$SpringCGLIB$$0.authenticate(<generated>)
+	at com.trazafrutas.controller.AuthController.login(AuthController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.trazafrutas.aspect.LoggingAspect.logMethodExecution(LoggingAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.trazafrutas.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.trazafrutas.filter.MDCFilter.doFilterInternal(MDCFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.trazafrutas.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG c.t.controller.AuthController [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthController.login
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthService.authenticate
+2024-11-27 14:05:21 [http-nio-8080-exec-5] INFO  com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Iniciando proceso de autenticación para usuario: Valen
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Usuario encontrado en la base de datos: Valen
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Hash almacenado en BD: $2a$10$gFvaXPiL3fLd2sJzJm8mDOznWtbza72TdZyfWGY/2VoS6lzrnYv3y
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña proporcionada: 123456
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Comparación directa - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Comparación encriptada - ¿Contraseñas coinciden?: true
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña verificada correctamente
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando JwtService.generateToken
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado JwtService.generateToken en 3ms
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - JWT generado exitosamente
+2024-11-27 14:05:21 [http-nio-8080-exec-5] INFO  com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - Autenticación completada exitosamente para usuario: Valen
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.AuthService [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthService.authenticate en 177ms
+2024-11-27 14:05:21 [http-nio-8080-exec-5] DEBUG c.t.controller.AuthController [e818d7d2-bd25-40d2-a55a-d690096dea69] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthController.login en 231ms
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 54ms
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 53ms
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.controller.DashboardController [d3338c17-b2f0-4425-a523-7b3b8f527930] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.controller.DashboardController [9f4370ef-8935-447d-a3db-f6a9662f02b2] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.service.DashboardService [d3338c17-b2f0-4425-a523-7b3b8f527930] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.service.DashboardService [9f4370ef-8935-447d-a3db-f6a9662f02b2] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.service.DashboardService [d3338c17-b2f0-4425-a523-7b3b8f527930] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 56ms
+2024-11-27 14:05:21 [http-nio-8080-exec-4] DEBUG c.t.controller.DashboardController [d3338c17-b2f0-4425-a523-7b3b8f527930] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 57ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.service.DashboardService [9f4370ef-8935-447d-a3db-f6a9662f02b2] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 117ms
+2024-11-27 14:05:21 [http-nio-8080-exec-2] DEBUG c.t.controller.DashboardController [9f4370ef-8935-447d-a3db-f6a9662f02b2] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 118ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 53ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 1ms
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 2ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [74220969-bf6e-448c-a55b-dd2135bae523] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getMonthlyStats
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [74220969-bf6e-448c-a55b-dd2135bae523] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getMonthlyStats
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.service.DashboardService [74220969-bf6e-448c-a55b-dd2135bae523] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getMonthlyStats en 54ms
+2024-11-27 14:05:21 [http-nio-8080-exec-3] DEBUG c.t.controller.DashboardController [74220969-bf6e-448c-a55b-dd2135bae523] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getMonthlyStats en 54ms
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 60ms
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.controller.DashboardController [c5228f10-940b-4d68-a7c6-1f81a12b4515] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardController.getStats
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.service.DashboardService [c5228f10-940b-4d68-a7c6-1f81a12b4515] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando DashboardService.getAdminStats
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.service.DashboardService [c5228f10-940b-4d68-a7c6-1f81a12b4515] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardService.getAdminStats en 103ms
+2024-11-27 14:05:21 [http-nio-8080-exec-6] DEBUG c.t.controller.DashboardController [c5228f10-940b-4d68-a7c6-1f81a12b4515] [Valen] [0:0:0:0:0:0:0:1] - ← Completado DashboardController.getStats en 104ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 4ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 65ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.controller.UserController [2f16ba89-80c6-4d9d-ae5f-9a7db6b01d6a] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserController.getAllUsers
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.UserService [2f16ba89-80c6-4d9d-ae5f-9a7db6b01d6a] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserService.getAllUsers
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.UserService [2f16ba89-80c6-4d9d-ae5f-9a7db6b01d6a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserService.getAllUsers en 62ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.controller.UserController [2f16ba89-80c6-4d9d-ae5f-9a7db6b01d6a] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserController.getAllUsers en 62ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 59ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.controller.UserController [fd437d36-941e-4823-af64-340f146382d0] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserController.getAllUsers
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.UserService [fd437d36-941e-4823-af64-340f146382d0] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserService.getAllUsers
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.UserService [fd437d36-941e-4823-af64-340f146382d0] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserService.getAllUsers en 61ms
+2024-11-27 14:05:22 [http-nio-8080-exec-1] DEBUG c.t.controller.UserController [fd437d36-941e-4823-af64-340f146382d0] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserController.getAllUsers en 62ms
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 166ms
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.controller.UserController [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserController.updateUser
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.controller.UserController [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - Actualizando usuario ID 3: Marleny
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.UserService [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserService.updateUser
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.UserService [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - Actualizando usuario: Marleny
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.UserService [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - Usuario actualizado exitosamente: Marleny
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG com.trazafrutas.service.UserService [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserService.updateUser en 237ms
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.controller.UserController [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - Usuario actualizado exitosamente: Marleny
+2024-11-27 14:05:32 [http-nio-8080-exec-4] DEBUG c.t.controller.UserController [ff3ab939-5431-4da2-aba7-1ef300502f3d] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserController.updateUser en 357ms
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 58ms
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG c.t.controller.UserController [62a16de9-ea7c-421c-a05d-4b947b9a170d] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserController.getAllUsers
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.service.UserService [62a16de9-ea7c-421c-a05d-4b947b9a170d] [Valen] [0:0:0:0:0:0:0:1] - → Iniciando UserService.getAllUsers
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG com.trazafrutas.service.UserService [62a16de9-ea7c-421c-a05d-4b947b9a170d] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserService.getAllUsers en 163ms
+2024-11-27 14:05:32 [http-nio-8080-exec-2] DEBUG c.t.controller.UserController [62a16de9-ea7c-421c-a05d-4b947b9a170d] [Valen] [0:0:0:0:0:0:0:1] - ← Completado UserController.getAllUsers en 163ms
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG c.t.controller.AuthController [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthController.login
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando AuthService.authenticate
+2024-11-27 14:05:39 [http-nio-8080-exec-6] INFO  com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Iniciando proceso de autenticación para usuario: Marleny
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Usuario encontrado en la base de datos: Marleny
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Hash almacenado en BD: $2a$10$cm5VGDDgSpLvsqjQi.llOelit5QQ51ATs.QMUuuUdn3e7PKQBpPj2
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña proporcionada: 123456
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Comparación directa - ¿Contraseñas coinciden?: false
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Comparación encriptada - ¿Contraseñas coinciden?: true
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Contraseña verificada correctamente
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - → Iniciando JwtService.generateToken
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado JwtService.generateToken en 2ms
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - JWT generado exitosamente
+2024-11-27 14:05:39 [http-nio-8080-exec-6] INFO  com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - Autenticación completada exitosamente para usuario: Marleny
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.AuthService [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthService.authenticate en 172ms
+2024-11-27 14:05:39 [http-nio-8080-exec-6] DEBUG c.t.controller.AuthController [755aa932-582c-4557-92ca-6b49973ea299] [anonymous] [0:0:0:0:0:0:0:1] - ← Completado AuthController.login en 327ms
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 60ms
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 60ms
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.controller.ProducerController [c998fefd-a48e-4b68-84bd-16a33bd3fe8d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerController.getMonthlyStats
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.controller.ProducerController [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerController.getStats
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.service.ProducerService [c998fefd-a48e-4b68-84bd-16a33bd3fe8d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerService.getMonthlyStats
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerService.getProducerStats
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.service.ProducerService [c998fefd-a48e-4b68-84bd-16a33bd3fe8d] [Marleny] [0:0:0:0:0:0:0:1] - Obteniendo estadísticas mensuales para el productor ID: 3
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - Obteniendo estadísticas para el productor ID: 3
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.service.ProducerService [c998fefd-a48e-4b68-84bd-16a33bd3fe8d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerService.getMonthlyStats en 51ms
+2024-11-27 14:05:39 [http-nio-8080-exec-8] DEBUG c.t.controller.ProducerController [c998fefd-a48e-4b68-84bd-16a33bd3fe8d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerController.getMonthlyStats en 51ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - Total fincas: 1
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - Total cultivos: 1
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - Total remisiones: 1, Total kilos: 150.0
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.service.ProducerService [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerService.getProducerStats en 99ms
+2024-11-27 14:05:39 [http-nio-8080-exec-5] DEBUG c.t.controller.ProducerController [26406307-db80-4984-8ae4-661f74e280b6] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerController.getStats en 99ms
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 53ms
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.controller.ProducerController [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerController.getStats
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerService.getProducerStats
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - Obteniendo estadísticas para el productor ID: 3
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 171ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.controller.ProducerController [c3df6e71-5e93-437d-82c4-dce79fbefbc9] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerController.getMonthlyStats
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.service.ProducerService [c3df6e71-5e93-437d-82c4-dce79fbefbc9] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ProducerService.getMonthlyStats
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.service.ProducerService [c3df6e71-5e93-437d-82c4-dce79fbefbc9] [Marleny] [0:0:0:0:0:0:0:1] - Obteniendo estadísticas mensuales para el productor ID: 3
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - Total fincas: 1
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - Total cultivos: 1
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - Total remisiones: 1, Total kilos: 150.0
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.service.ProducerService [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerService.getProducerStats en 86ms
+2024-11-27 14:05:39 [http-nio-8080-exec-2] DEBUG c.t.controller.ProducerController [5d85f529-0fb0-48fa-bde4-d141561c8ebb] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerController.getStats en 86ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.service.ProducerService [c3df6e71-5e93-437d-82c4-dce79fbefbc9] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerService.getMonthlyStats en 66ms
+2024-11-27 14:05:39 [http-nio-8080-exec-4] DEBUG c.t.controller.ProducerController [c3df6e71-5e93-437d-82c4-dce79fbefbc9] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ProducerController.getMonthlyStats en 67ms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 62ms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG c.t.controller.FarmController [7a39ad7f-8efc-42d8-bda4-788ff74a009f] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.FarmService [7a39ad7f-8efc-42d8-bda4-788ff74a009f] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.FarmService [7a39ad7f-8efc-42d8-bda4-788ff74a009f] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 54ms
+2024-11-27 14:05:52 [http-nio-8080-exec-8] DEBUG c.t.controller.FarmController [7a39ad7f-8efc-42d8-bda4-788ff74a009f] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 59ms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 53ms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG c.t.controller.FarmController [2f5f4229-4c84-4349-83ae-50e4bed14ded] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.FarmService [2f5f4229-4c84-4349-83ae-50e4bed14ded] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.FarmService [2f5f4229-4c84-4349-83ae-50e4bed14ded] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 178ms
+2024-11-27 14:05:52 [http-nio-8080-exec-5] DEBUG c.t.controller.FarmController [2f5f4229-4c84-4349-83ae-50e4bed14ded] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 178ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 7ms
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 59ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 64ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 3ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG c.t.controller.CropController [b4599f6f-8e8d-4ae9-9101-82c40fb584e2] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getMyCrops
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.CropService [b4599f6f-8e8d-4ae9-9101-82c40fb584e2] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getCropsByUserId
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG c.t.controller.FarmController [d0ecae78-b7e2-4072-b3a3-f1b1002a28e5] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.FarmService [d0ecae78-b7e2-4072-b3a3-f1b1002a28e5] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG com.trazafrutas.service.FarmService [d0ecae78-b7e2-4072-b3a3-f1b1002a28e5] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 55ms
+2024-11-27 14:05:57 [http-nio-8080-exec-7] DEBUG c.t.controller.FarmController [d0ecae78-b7e2-4072-b3a3-f1b1002a28e5] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 56ms
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG com.trazafrutas.service.CropService [b4599f6f-8e8d-4ae9-9101-82c40fb584e2] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropService.getCropsByUserId en 58ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 1ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-1] DEBUG c.t.controller.CropController [b4599f6f-8e8d-4ae9-9101-82c40fb584e2] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropController.getMyCrops en 68ms
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 66ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 55ms
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 3ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG c.t.controller.FarmController [f0cd63a1-0f5d-45d5-843d-bfa0a7667b21] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.FarmService [f0cd63a1-0f5d-45d5-843d-bfa0a7667b21] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG c.t.controller.CropController [59c85b65-d0c7-41bc-98cf-e7c6dea0fb1d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getMyCrops
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.service.CropService [59c85b65-d0c7-41bc-98cf-e7c6dea0fb1d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getCropsByUserId
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG com.trazafrutas.service.CropService [59c85b65-d0c7-41bc-98cf-e7c6dea0fb1d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropService.getCropsByUserId en 44ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG com.trazafrutas.service.FarmService [f0cd63a1-0f5d-45d5-843d-bfa0a7667b21] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 48ms
+2024-11-27 14:05:57 [http-nio-8080-exec-9] DEBUG c.t.controller.FarmController [f0cd63a1-0f5d-45d5-843d-bfa0a7667b21] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 48ms
+2024-11-27 14:05:57 [http-nio-8080-exec-10] DEBUG c.t.controller.CropController [59c85b65-d0c7-41bc-98cf-e7c6dea0fb1d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropController.getMyCrops en 49ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 1ms
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 67ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.controller.ClientController [324cc75f-7506-4915-87d4-f9dcdd5c217b] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.trazafrutas.service.ClientService [324cc75f-7506-4915-87d4-f9dcdd5c217b] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 77ms
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 72ms
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 78ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG c.t.controller.FarmController [49ade839-712c-4261-9b62-6613c55374ce] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG c.t.controller.CropController [f62d6a11-f819-4aa6-81c3-9929843b0648] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getMyCrops
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.service.FarmService [49ade839-712c-4261-9b62-6613c55374ce] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.CropService [f62d6a11-f819-4aa6-81c3-9929843b0648] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getCropsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 9ms
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.controller.RemissionController [acdcad0e-e73e-484b-9550-611b8a4f23db] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getMyRemissions
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.service.RemissionService [acdcad0e-e73e-484b-9550-611b8a4f23db] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getRemissionsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.trazafrutas.service.ClientService [324cc75f-7506-4915-87d4-f9dcdd5c217b] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 67ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.controller.ClientController [324cc75f-7506-4915-87d4-f9dcdd5c217b] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 67ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 3ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG com.trazafrutas.service.CropService [f62d6a11-f819-4aa6-81c3-9929843b0648] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropService.getCropsByUserId en 72ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG com.trazafrutas.service.FarmService [49ade839-712c-4261-9b62-6613c55374ce] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 74ms
+2024-11-27 14:06:02 [http-nio-8080-exec-3] DEBUG c.t.controller.FarmController [49ade839-712c-4261-9b62-6613c55374ce] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 74ms
+2024-11-27 14:06:02 [http-nio-8080-exec-6] DEBUG c.t.controller.CropController [f62d6a11-f819-4aa6-81c3-9929843b0648] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropController.getMyCrops en 81ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 7ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.service.RemissionService [acdcad0e-e73e-484b-9550-611b8a4f23db] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getRemissionsByUserId en 88ms
+2024-11-27 14:06:02 [http-nio-8080-exec-9] DEBUG c.t.controller.RemissionController [acdcad0e-e73e-484b-9550-611b8a4f23db] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getMyRemissions en 91ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 1ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 85ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 3ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.controller.ClientController [8aa87a39-d8bb-4330-b64d-52a6084687b8] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ClientController.getAllClients
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.trazafrutas.service.ClientService [8aa87a39-d8bb-4330-b64d-52a6084687b8] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando ClientService.getAllClients
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 68ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 4ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG c.t.controller.FarmController [bf3c97a2-e6f3-4d79-a2d9-590d3c05a514] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmController.getMyFarms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.FarmService [bf3c97a2-e6f3-4d79-a2d9-590d3c05a514] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando FarmService.getFarmsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 75ms
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG c.t.controller.CropController [10d46361-b6c9-4b18-accb-f3a567008b98] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropController.getMyCrops
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.CropService [10d46361-b6c9-4b18-accb-f3a567008b98] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando CropService.getCropsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 76ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 2ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.controller.RemissionController [23a691fc-7353-47c2-b208-0e0fc84c7501] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getMyRemissions
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.service.RemissionService [23a691fc-7353-47c2-b208-0e0fc84c7501] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getRemissionsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.trazafrutas.service.ClientService [8aa87a39-d8bb-4330-b64d-52a6084687b8] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ClientService.getAllClients en 66ms
+2024-11-27 14:06:02 [http-nio-8080-exec-1] DEBUG c.t.controller.ClientController [8aa87a39-d8bb-4330-b64d-52a6084687b8] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado ClientController.getAllClients en 67ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG com.trazafrutas.service.FarmService [bf3c97a2-e6f3-4d79-a2d9-590d3c05a514] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmService.getFarmsByUserId en 59ms
+2024-11-27 14:06:02 [http-nio-8080-exec-5] DEBUG c.t.controller.FarmController [bf3c97a2-e6f3-4d79-a2d9-590d3c05a514] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado FarmController.getMyFarms en 61ms
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG com.trazafrutas.service.CropService [10d46361-b6c9-4b18-accb-f3a567008b98] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropService.getCropsByUserId en 58ms
+2024-11-27 14:06:02 [http-nio-8080-exec-8] DEBUG c.t.controller.CropController [10d46361-b6c9-4b18-accb-f3a567008b98] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado CropController.getMyCrops en 65ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.service.RemissionService [23a691fc-7353-47c2-b208-0e0fc84c7501] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getRemissionsByUserId en 71ms
+2024-11-27 14:06:02 [http-nio-8080-exec-4] DEBUG c.t.controller.RemissionController [23a691fc-7353-47c2-b208-0e0fc84c7501] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getMyRemissions en 71ms
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 46ms
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 5ms
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.controller.RemissionController [23d9f657-9b5c-4bdd-8202-4126aa59c247] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getMyRemissions
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.service.RemissionService [23d9f657-9b5c-4bdd-8202-4126aa59c247] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getRemissionsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.service.RemissionService [23d9f657-9b5c-4bdd-8202-4126aa59c247] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getRemissionsByUserId en 58ms
+2024-11-27 14:06:02 [http-nio-8080-exec-2] DEBUG c.t.controller.RemissionController [23d9f657-9b5c-4bdd-8202-4126aa59c247] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getMyRemissions en 59ms
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 165ms
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 3ms
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.controller.RemissionController [3c10fe91-ffd8-491b-8341-be8d1bf8de20] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getMyRemissions
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.service.RemissionService [3c10fe91-ffd8-491b-8341-be8d1bf8de20] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getRemissionsByUserId
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.service.RemissionService [3c10fe91-ffd8-491b-8341-be8d1bf8de20] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getRemissionsByUserId en 77ms
+2024-11-27 14:06:02 [http-nio-8080-exec-7] DEBUG c.t.controller.RemissionController [3c10fe91-ffd8-491b-8341-be8d1bf8de20] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getMyRemissions en 81ms
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.extractUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.extractUsername en 2ms
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - → Iniciando CustomUserDetailsService.loadUserByUsername
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG c.t.service.CustomUserDetailsService [] [] [] - ← Completado CustomUserDetailsService.loadUserByUsername en 55ms
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - → Iniciando JwtService.isTokenValid
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG com.trazafrutas.security.JwtService [] [] [] - ← Completado JwtService.isTokenValid en 6ms
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG c.t.controller.RemissionController [c5a94c49-3499-4824-b510-1a9fb152795d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionController.getMyRemissions
+2024-11-27 14:06:02 [http-nio-8080-exec-10] DEBUG c.t.service.RemissionService [c5a94c49-3499-4824-b510-1a9fb152795d] [Marleny] [0:0:0:0:0:0:0:1] - → Iniciando RemissionService.getRemissionsByUserId
+2024-11-27 14:06:03 [http-nio-8080-exec-10] DEBUG c.t.service.RemissionService [c5a94c49-3499-4824-b510-1a9fb152795d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionService.getRemissionsByUserId en 66ms
+2024-11-27 14:06:03 [http-nio-8080-exec-10] DEBUG c.t.controller.RemissionController [c5a94c49-3499-4824-b510-1a9fb152795d] [Marleny] [0:0:0:0:0:0:0:1] - ← Completado RemissionController.getMyRemissions en 67ms
+2024-11-27 14:06:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [] [] [] - Closing JPA EntityManagerFactory for persistence unit 'default'
