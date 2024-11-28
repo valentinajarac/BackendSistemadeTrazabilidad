@@ -68,8 +68,8 @@ public class ClientService {
                     clientRepository.existsByFloid(updatedClient.getFloid())) {
                 throw new IllegalArgumentException("Ya existe un cliente con el FLO ID: " + updatedClient.getFloid());
             }
-            if (!updatedClient.getFloid().matches("\\d{4}")) {
-                throw new IllegalArgumentException("El FLO ID debe ser un número de 4 dígitos");
+            if (!updatedClient.getFloid().matches("\\d{5}")) {
+                throw new IllegalArgumentException("El FLO ID debe ser un número de 5 dígitos");
             }
             existingClient.setFloid(updatedClient.getFloid());
         }
