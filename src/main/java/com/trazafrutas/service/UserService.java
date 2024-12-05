@@ -2,6 +2,7 @@ package com.trazafrutas.service;
 
 import com.trazafrutas.exception.EntityNotFoundException;
 import com.trazafrutas.model.User;
+import com.trazafrutas.model.enums.Certification;
 import com.trazafrutas.repository.UserRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -70,7 +71,18 @@ public class UserService {
         query.setParameter("usuario", user.getUsuario());
 
         User savedUser = (User) query.getSingleResult();
-        logger.debug("Usuario guardado exitosamente: {}", savedUser.getUsuario());
+
+        if (user.getCertifications() != null && !user.getCertifications().isEmpty()) {
+            for (Certification cert : user.getCertifications()) {
+                entityManager.createNativeQuery(
+                                "INSERT INTO user_certifications (user_id, certification) " +
+                                        "VALUES (:userId, CAST(:certValue AS TEXT)::certification_type)")
+                        .setParameter("userId", savedUser.getId())
+                        .setParameter("certValue", cert.name())
+                        .executeUpdate();
+            }
+            savedUser.setCertifications(user.getCertifications());
+        }
 
         return savedUser;
     }
