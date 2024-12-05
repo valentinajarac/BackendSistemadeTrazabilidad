@@ -76,7 +76,7 @@ public class UserService {
             for (Certification cert : user.getCertifications()) {
                 entityManager.createNativeQuery(
                                 "INSERT INTO user_certifications (user_id, certification) " +
-                                        "VALUES (:userId, CAST(:certValue AS certification_type))")
+                                        "VALUES (:userId, :certValue::text::certification_type)")
                         .setParameter("userId", savedUser.getId())
                         .setParameter("certValue", cert.name())
                         .executeUpdate();
